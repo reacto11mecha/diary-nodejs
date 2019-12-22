@@ -1,0 +1,41 @@
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <% if(locals.flash) { %>
+            <div class="mt-2 mb-2">
+                <%- locals.flash %>
+            </div>
+            <% } %>
+            <div class="card bg-dark text-white mt-3">
+                <div class="card-body">
+                    <h1 class="display-3 mb-3">Daftar</h1>
+
+                    <hr class="bg-white">
+
+                    <form method="post" action="<%= bURL %>/log">
+                        <div class="form-group">
+                            <label for="u">Masukan Nama Pengguna</label>
+                            <input type="text" name="username" id="u" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="e">Masukan Email</label>
+                            <input type="text" name="email" id="e" class="form-control">
+                        </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <label for="pw1">Masukan kata sandi</label>
+                                <input type="password" name="password_first" id="pw1" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label for="pw2">Konfirmasi Kata Sandi</label>
+                                <input type="password" name="password_confirm" class="form-control" id="pw2">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- contentFor('scriptTambahan') %>
+<script src="/js/auth.js"></script>

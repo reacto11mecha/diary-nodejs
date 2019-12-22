@@ -1,0 +1,39 @@
+{
+  "name": "my-diary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "btoa": "^1.2.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash-notification": "^0.5.0",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.17.0",
+    "is-base64": "^1.0.0",
+    "jquery": "^3.4.1",
+    "method-override": "^3.0.0",
+    "nedb": "^1.8.0",
+    "nedb-session-store": "^1.1.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1"
+  }
+}

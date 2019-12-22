@@ -1,0 +1,15 @@
+.jumbotron .container {
+    opacity: 0;
+    transform: translate(0px, -50px);
+    transition: 1s;
+}
+
+.jumbotron .container.muncul {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+#perkenalan ::selection {
+    background-color: transparent;
+    color:white;
+}

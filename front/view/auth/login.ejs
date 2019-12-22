@@ -1,0 +1,39 @@
+<div class="container mt-2">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <% if(locals.flash) { %>
+            <div class="mt-2 mb-2">
+                <%- locals.flash %>
+            </div>
+            <% } %>
+            <div class="card bg-dark text-white mt-3">
+                <div class="card-body">
+                    <h1 class="display-3 mb-3">Login</h1>
+
+                    <hr class="bg-white">
+
+                    <form method="post" action="<%= bURL %>/log">
+                        <div class="form-group">
+                            <label for="e">Masukan Email</label>
+                            <input type="text" name="email" id="e" class="form-control" placeholder="akun@contoh.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="p">Masukan Kata Sandi</label>
+                            <input type="password" name="password" id="p" class="form-control">
+                        </div>
+                        <hr class="bg-white">
+                        <div class="form-group mt-2">
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </div>
+                        <div class="form-group">
+                            <a href="<%= bURL %>/daftar" class="btn btn-success btn-block">Daftar</a>
+                        </div>
+                        <div class="form-group text-center"><a href="/" class="text-center">Kembali</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- contentFor('scriptTambahan') %>
+<script src="/js/auth.js"></script>

@@ -1,0 +1,45 @@
+<div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+        <h1 class="display-3">Selamat Datang</h1>
+        <h6>Kepada Para Pembaca</h6>
+    </div>
+</div>
+<section class="bg-primary" id="perkenalan">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md">
+                <h3 class="display-4">Perkenalan</h3>
+            </div>
+            <div class="col-md" id="filled-content">
+                <h5>Halo</h5>,Nama saya Ezra Khairan Permana.
+                Saya adalah seorang pelajar sekaligus seorang pemrogram (Handal apa kagak ya ?).
+                Udah belajar program dari kelas 5, dan buat sebuah Diary karena tak terima.
+                Website ini ku buat sendiri tanpa bantuan siapapun.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-dark text-white" id="auth">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h3 class="display-3">Autentikasi</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><a class="btn btn-block btn-primary" href="/auth/login">Login</a></div>
+        </div>
+        <div class="row mt-2">
+            <div class="col"><a class="btn btn-block btn-success" href="/auth/daftar">Daftar</a></div>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col text-center">
+                <p>Login atau Daftar untuk melanjutkan</p>
+            </div>
+        </div>
+    </div>
+</section>
+<%- contentFor('scriptTambahan') %>
+<script src="/js/for-landing.js"></script>
+<%- contentFor('styleTambahan')%>
+<link rel="stylesheet" href="/style/styling-landing.css">
