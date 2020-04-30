@@ -25,7 +25,7 @@
     "express-jwt": "^5.3.1",
     "express-session": "^1.17.0",
     "is-base64": "^1.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "method-override": "^3.0.0",
     "nedb": "^1.8.0",
     "nedb-session-store": "^1.1.2",
